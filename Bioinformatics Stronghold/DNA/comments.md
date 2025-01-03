@@ -1,0 +1,3 @@
+Interestingly enough, the dictionary implementation only iterates through the string once, but the `.count()` method is called 4 times, thus iterates through the string 4 times. Yet, the `.count()` method is significantly faster than iterating through with a dictionary. This is because `.count()` is a low-level C method in Python, so it is optimized for performance.
+
+From a theoretical perspective, purely from an algorithmic standpoint, the dictionary method is better. However, when it comes to coding, optimization matters, especially in computationally intense fields like bioinformatics.
